@@ -1,0 +1,18 @@
+{
+  "name": "greenhouse-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for Greenhouse ATS",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "MCP_TRANSPORT=sse node server.js",
+    "start:local": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "express": "^4.21.0"
+  }
+}
